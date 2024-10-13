@@ -1,0 +1,17 @@
+.title {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.h1 {
+  font-size: 52px;
+  letter-spacing: 2.4px;
+}
+
+.p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
