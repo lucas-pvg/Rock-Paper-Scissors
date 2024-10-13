@@ -1,9 +1,11 @@
+import { Title } from './components/title/title'
+// import { ScrollText } from './components/scroll-text/scroll-text'
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Title />
     </>
   )
 }

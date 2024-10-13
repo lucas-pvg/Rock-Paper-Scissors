@@ -1,0 +1,29 @@
+.scroll-text {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  gap: 8px;
+
+  transition: transform .15s ease-in;
+}
+
+.scroll-text:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.p {
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.icon {
+  animation: upAndDown 1.5s linear infinite;
+}
+
+@keyframes upAndDown {
+  0% {transform: translateY(0)}
+  50% {transform: translateY(3px)}
+  100% {transform: translateY(0)}
+}
