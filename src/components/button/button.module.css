@@ -1,0 +1,27 @@
+.container {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: var(--secondary);
+  box-shadow: var(--button-shadow);
+
+  transition: transform .2s ease-in-out;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button {
+  padding: 15px 20px;
+}
+
+.card {
+  height: 80px;
+  width: 120px;
+  padding: 10px;
+}
