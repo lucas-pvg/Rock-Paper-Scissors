@@ -1,6 +1,6 @@
 .field {
-  width: 630px;
-  height: 300px;
+  width: 520px;
+  height: 260px;
   border-radius: 12px;
   background: var(--primary);
   box-shadow: var(--primary-inner-shadow);
@@ -37,6 +37,7 @@
 
 .vs {
   grid-area: vs;
+  filter: drop-shadow(var(--object-shadow));
 }
 
 .top {

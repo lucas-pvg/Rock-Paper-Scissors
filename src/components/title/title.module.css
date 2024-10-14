@@ -3,15 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .h1 {
-  font-size: 52px;
+  font-size: 44px;
   letter-spacing: 2.4px;
 }
 
 .p {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }

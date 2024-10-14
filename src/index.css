@@ -6,11 +6,16 @@
   --text: #FDF2E3;
 
   --base-shadow: 4px 4px 30px rgba(0, 0, 0, 25%);
+  --object-shadow: 4px 4px 12px rgba(0, 0, 0, 25%);
   --button-shadow: 8px 8px 16px rgba(54, 94, 125, 80%);
   --primary-inner-shadow: 
     inset 8px 8px 16px rgba(69, 120, 160, 80%), 
     inset -8px -8px 16px rgba(130, 170, 201, 80%)
   ;
+}
+
+button {
+  all: unset;
 }
 
 * {
