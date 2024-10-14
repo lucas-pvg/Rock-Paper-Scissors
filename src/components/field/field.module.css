@@ -1,0 +1,52 @@
+.field {
+  width: 630px;
+  height: 300px;
+  border-radius: 12px;
+  background: var(--primary);
+  box-shadow: var(--primary-inner-shadow);
+}
+
+.divider {
+  width: 12px;
+  height: 80px;
+  flex-shrink: 0;
+  background: var(--secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 15% 1fr;
+  grid-template-rows: 1fr 15% 1fr ;
+  grid-template-areas:
+    "player top robot"
+    "player vs robot"
+    "player bottom robot"
+  ;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.player {
+  grid-area: player;
+}
+
+.robot {
+  grid-area: robot;
+}
+
+.vs {
+  grid-area: vs;
+}
+
+.top {
+  grid-area: top;
+  border-radius: 0 0 20px 20px;
+  align-self: start;
+}
+
+.bottom {
+  grid-area: bottom;
+  border-radius: 20px 20px 0 0;
+  align-self: end;
+}

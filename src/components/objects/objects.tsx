@@ -6,12 +6,15 @@ import style from './objects.module.css'
 interface ObjectsProps {
   type: 'rock' | 'paper' | 'scissors'
   size?: number
+  className?: string
 }
 
-export function Objects({ type, size }: ObjectsProps) {
+export function Objects({ type, size, className }: ObjectsProps) {
+  const classes = className ? `${style.object} ${className}` : style.object
+
   switch (type) {
-    case 'rock': return <Rock className={style.object} style={{ width: size || '80px', height: 'auto' }} />
-    case 'paper': return <Paper className={style.object} style={{ width: size || '80px', height: 'auto' }} />
-    case 'scissors': return <Scissors className={style.object} style={{ width: size || '80px', height: 'auto' }} />
+    case 'rock': return <Rock className={classes} style={{ width: size || '80px', height: 'auto' }} />
+    case 'paper': return <Paper className={classes} style={{ width: size || '80px', height: 'auto' }} />
+    case 'scissors': return <Scissors className={classes} style={{ width: size || '80px', height: 'auto' }} />
   }
 }
