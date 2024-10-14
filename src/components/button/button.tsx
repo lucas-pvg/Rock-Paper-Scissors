@@ -20,10 +20,15 @@ const buttonVariants = cva(
 interface ButtonProps
   extends ComponentProps<'button'>, VariantProps<typeof buttonVariants> {
     variant?: 'button' | 'card'
+    className?: string
 }
 
-export function Button({ variant, ...props }: ButtonProps) { 
+export function Button({ variant, className, ...props }: ButtonProps) {
+  const classes = className 
+  ? `${buttonVariants({ variant })} ${className}` 
+  : buttonVariants({ variant })
+
   return (
-    <button className={buttonVariants({ variant })} {...props} />
+    <button className={classes} {...props} />
   )
 }
