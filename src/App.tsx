@@ -1,12 +1,13 @@
 import { Title } from './components/title/title'
-// import { ScrollText } from './components/scroll-text/scroll-text'
+import { Field } from './components/field/field'
 import './App.css'
 
 function App() {
   return (
-    <>
+    <div className='app-container'>
       <Title />
-    </>
+      <Field />
+    </div>
   )
 }
 
