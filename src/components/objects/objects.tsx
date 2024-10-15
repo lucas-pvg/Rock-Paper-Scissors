@@ -4,7 +4,7 @@ import Scissors from '../../assets/scissors.svg?react'
 import style from './objects.module.css'
 
 interface ObjectsProps {
-  type: 'rock' | 'paper' | 'scissors'
+  type: 'rock' | 'paper' | 'scissors' | ''
   size?: number
   className?: string
 }
