@@ -1,0 +1,35 @@
+.grid {
+  width: fit-content;
+  height: fit-content;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content min-content;
+  grid-template-areas:
+    "field field field"
+    "rock paper scissors"
+  ;
+
+  justify-items: center;
+  align-items: center;
+  gap: 30px 30px;
+}
+
+.field-grid {
+  grid-area: field;
+}
+
+.rock-grid {
+  grid-area: rock;
+  width: 100%;
+}
+
+.paper-grid {
+  grid-area: paper;
+  width: 100%;
+}
+
+.scissors-grid {
+  grid-area: scissors;
+  width: 100%;
+}
