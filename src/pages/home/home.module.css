@@ -9,48 +9,10 @@
   padding: 40px 220px 30px;
 }
 
-.grid {
-  width: fit-content;
-  height: 80vh;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr min-content min-content 50px;
-  grid-template-areas:
-    "title title title"
-    "field field field"
-    "rock paper scissors"
-    "scroll scroll scroll"
-  ;
-
+.container {
+  display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
-  gap: 30px 30px;
-}
-
-.title-grid {
-  grid-area: title;
-}
-
-.field-grid {
-  grid-area: field;
-}
-
-.rock-grid {
-  grid-area: rock;
-  width: 100%;
-}
-
-.paper-grid {
-  grid-area: paper;
-  width: 100%;
-}
-
-.scissors-grid {
-  grid-area: scissors;
-  width: 100%;
-}
-
-.scroll-grid {
-  grid-area: scroll;
+  gap: 50px;
 }
