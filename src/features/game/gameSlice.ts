@@ -20,8 +20,8 @@ const initialState: GameState = {
 
 export const playRobot = createAsyncThunk(
   'game/playRobot',
-  async () => {
-    await delay(1000)
+  async (ms: number) => {
+    await delay(ms)
     const response = await generateRobotChoice()
     return response
   }
@@ -29,8 +29,8 @@ export const playRobot = createAsyncThunk(
 
 export const determineWinner = createAsyncThunk(
   'game/determineWinner',
-  async ({ player, robot }: { player: GameState['player']; robot: GameState['player'] }) => {
-    await delay(1000)
+  async ({ player, robot }: { player: GameState['player'], robot: GameState['robot'] }) => {
+    await delay(200)
     const response = await computeWinner(player, robot)
     return response
   }

@@ -19,7 +19,7 @@ export function Game() {
     }
 
     if (phase === 'playing') {
-      dispatch(playRobot())
+      dispatch(playRobot(1000))
     }
 
     if (phase === 'ended') {
