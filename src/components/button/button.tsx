@@ -9,10 +9,15 @@ const buttonVariants = cva(
       variant: {
         button: style.button,
         card: style.card
+      },
+      disabled: {
+        true: style.disabled,
+        false: style.enabled
       }
     },
     defaultVariants: {
-      variant: 'button'
+      variant: 'button',
+      disabled: false
     }
   }
 )
@@ -20,15 +25,16 @@ const buttonVariants = cva(
 interface ButtonProps
   extends ComponentProps<'button'>, VariantProps<typeof buttonVariants> {
     variant?: 'button' | 'card'
+    disabled: boolean
     className?: string
 }
 
-export function Button({ variant, className, ...props }: ButtonProps) {
+export function Button({ variant, disabled, className, ...props }: ButtonProps) {
   const classes = className 
-  ? `${buttonVariants({ variant })} ${className}` 
-  : buttonVariants({ variant })
+  ? `${buttonVariants({ variant, disabled })} ${className}` 
+  : buttonVariants({ variant, disabled })
 
   return (
-    <button className={classes} {...props} />
+    <button className={classes} disabled={disabled} {...props} />
   )
 }
