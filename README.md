@@ -200,8 +200,8 @@ Project Link: [https://github.com/lucas-pvg/Rock-Paper-Scissors](https://github.
 [netlify-badge]: https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white
 [netlify-url]: https://www.netlify.com/
 
-[license-badge]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-badge]: https://img.shields.io/github/license/lucas-pvg/Rock-Paper-Scissors.svg?style=for-the-badge
+[license-url]: https://github.com/lucas-pvg/Rock-Paper-Scissors/blob/main/LICENSE.txt
 [gmail-badge]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [gmail-url]: https://mail.google.com/mail/u/0/?to=lucaspvg1@gmail.com&tf=cm
 [linkedin-badge]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
