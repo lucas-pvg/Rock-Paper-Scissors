@@ -1,7 +1,5 @@
-# :scissors: Rock, Paper, Scissors!
-
-<br>
 <a id="readme-top"></a>
+# :scissors: Rock, Paper, Scissors!
 
 [![Vite][vite-badge]][vite-url]
 [![React][react-badge]][react-url]
